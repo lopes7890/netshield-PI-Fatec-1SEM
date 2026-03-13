@@ -1,0 +1,37 @@
+body {
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: flex;
+  margin: 50px;
+}
+
+header {
+  color: white;
+  text-align: left;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  /* font-size: 50px; */
+  background-color: #00357a;
+  margin: 0;
+  padding: 20px;
+}
+
+h2,
+h1 {
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.equipe {
+  color: black;
+  padding: 20px;
+}
+
+.sobre_projeto {
+  color: white;
+  padding: 20px;
+  background-color: #006BFA;
+}
