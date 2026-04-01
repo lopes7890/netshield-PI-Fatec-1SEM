@@ -28,12 +28,13 @@
             <li><a href="site-equipe.html">Início</a></li>
             <li><a href="#equipe">Sobre a equipe</a></li>
             <li><a href="#sobre-projeto">Sobre o projeto</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="#fale-conosco">Fale Conosco</a></li>
+            <li><a href=""></a></li>
           </ul>
         </nav>
       </section>
       <section class="equipe" id="equipe">
-        <strong>Sobre a equipe:</strong>
+        <h2>Sobre a equipe</h2>
         <div class="membros">
           <div class="membro">
             <img
@@ -61,8 +62,8 @@
         </div>
       </section>
       <section class="sobre_projeto" id="sobre-projeto">
-        <h2>Descrição do projeto:</h2>
-        <p>
+        <h2>Sobre o projeto</h2>
+        <p class="paragrafo_sobre_projeto">
           O projeto Net-Shield tem como objetivo desenvolver um sistema de
           segurança da informação para proteger prontuários eletrônicos. Com o
           aumento da digitalização dos registros médicos, a segurança desses
@@ -73,7 +74,34 @@
           além de monitorar atividades suspeitas e fornecer alertas em tempo
           real para prevenir possíveis violações de segurança.
         </p>
-        <p><a href="#">Link do sistema</a></p>
+        <div class="recursos">
+          <h3>Recursos do sistema</h3>
+          <ul>
+            <li>Criptografia de ponta a ponta</li>
+            <li>Logs imutáveis</li>
+            <li>Monitoramento em tempo real</li>
+            <li>Relatórios de conformidade</li>
+            <li>Autenticação multifator</li>
+          </ul>
+        </div>
+      </section>
+      <section class="fale-conosco" id="fale-conosco">
+        <h2>Fale Conosco</h2>
+        <p class="paragrafo_fale_conosco">
+          Se você tiver alguma dúvida, sugestão ou quiser entrar em contato
+          conosco, por favor, preencha o formulário abaixo:
+        </p>
+        <form class="formulario-contato">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+          <button type="submit">Enviar</button>
       </section>
     </main>
   </body>
