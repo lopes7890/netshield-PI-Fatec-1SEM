@@ -1,70 +1,40 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Net-Shield</title>
+    <title>NetShield</title>
     <link rel="stylesheet" href="css/index.css" />
   </head>
-
   <body>
-    <header>
-      <h1>NET SHIELD</h1>
-      <h2>
-        Segurança da informação para Proteção de Prontuários Eletrônicos
-      </h2>
-      <img
-        src="/img/logo_netshield.png"
-        alt="logo da equipe"
-        width="100px"
-        height="100px"
-        class="imagen-logo"
-      />
+    <!-- HEADER -->
+    <header class="header">
+      <div class="logo">
+        <h1>NetShield</h1>
+        <h2>
+          Segurança da informação para Proteção de Prontuários Eletrônicos com
+          modelagem STRIDE
+        </h2>
+      </div>
+      <div class="shield">
+        <img src="img/logo_netshield.png" alt="" />
+      </div>
     </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="index.html">Início</a>
+      <a href="#empresa">Empresa</a>
+      <a href="#projeto">Projeto</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#fale-conosco">Fale Conosco</a>
+    </nav>
+
+    <!-- EMPRESA -->
     <main>
-      <section>
-        <nav>
-          <ul>
-            <li><a href="site-equipe.html">Início</a></li>
-            <li><a href="#equipe">Sobre a equipe</a></li>
-            <li><a href="#sobre-projeto">Sobre o projeto</a></li>
-            <li><a href="#fale-conosco">Fale Conosco</a></li>
-            <li><a href=""></a></li>
-          </ul>
-        </nav>
-      </section>
-      <section class="equipe" id="equipe">
-        <h2>Sobre a equipe</h2>
-        <div class="membros">
-          <div class="membro">
-            <img
-              src="img/allfoto.jpeg"
-              alt="Integrante Allison"
-            />
-            <p>Allison Lopes da Silva Bosco</p>
-          </div>
-
-          <div class="membro">
-            <img
-              src="img/lucas.jpeg"
-              alt="Integrante Lucas"
-            />
-            <p>Lucas Ribeiro Morato</p>
-          </div>
-
-          <div class="membro">
-            <img
-              src="img/felipe.jpeg"
-              alt="Integrante Felipe"
-            />
-            <p>Felipe Hiroki Nukamoto Tamashiro</p>
-          </div>
-        </div>
-      </section>
-      <section class="sobre_projeto" id="sobre-projeto">
-        <h2>Sobre o projeto</h2>
-        <p class="paragrafo_sobre_projeto">
-          O projeto Net-Shield tem como objetivo desenvolver um sistema de
+      <section class="section" id="empresa">
+        <h2>Empresa</h2>
+        <p>
+          A empresa Net-Shield tem como objetivo desenvolver um sistema de
           segurança da informação para proteger prontuários eletrônicos. Com o
           aumento da digitalização dos registros médicos, a segurança desses
           dados se torna crucial para garantir a privacidade dos pacientes e a
@@ -74,35 +44,157 @@
           além de monitorar atividades suspeitas e fornecer alertas em tempo
           real para prevenir possíveis violações de segurança.
         </p>
-        <div class="recursos">
-          <h3>Recursos do sistema</h3>
-          <ul>
-            <li>Criptografia de ponta a ponta</li>
-            <li>Logs imutáveis</li>
-            <li>Monitoramento em tempo real</li>
-            <li>Relatórios de conformidade</li>
-            <li>Autenticação multifator</li>
-          </ul>
+      </section>
+
+      <!-- PROJETO -->
+      <section class="section" id="projeto">
+        <h2>Projeto</h2>
+        <p>
+          O Projeto Helix é uma solução de segurança da informação voltada à
+          proteção de prontuários eletrônicos, utilizando a metodologia STRIDE
+          para identificar e mitigar ameaças.
+        </p>
+
+        <p>
+          A proposta do sistema é garantir a confidencialidade, integridade e
+          disponibilidade dos dados clínicos, que são altamente sensíveis. Para
+          isso, o Helix implementa mecanismos como criptografia de dados,
+          autenticação multifator e controle de acesso baseado em papéis (RBAC).
+        </p>
+
+        <p>
+          A modelagem STRIDE é aplicada para analisar possíveis vulnerabilidades
+          no sistema, classificando ameaças em seis categorias: falsificação de
+          identidade (Spoofing), violação de integridade (Tampering), repúdio
+          (Repudiation), exposição de informações (Information Disclosure),
+          negação de serviço (Denial of Service) e elevação de privilégio
+          (Elevation of Privilege). Com base nessa análise, o Helix define
+          estratégias específicas de proteção para cada tipo de risco.
+        </p>
+
+        <p>
+          Assim, o Projeto Helix não apenas protege os dados médicos, mas também
+          fortalece a confiança no sistema de saúde digital, garantindo que as
+          informações dos pacientes estejam seguras contra acessos indevidos e
+          ataques cibernéticos.
+        </p>
+
+        <!-- <section class="stride-container"> -->
+
+        <!-- ITEM -->
+        <div class="stride-item">
+          <div class="icon yellow">S</div>
+          <div class="content">
+            <h3>Spoofing (Falsificação de identidade):</h3>
+            <p>
+              Ocorre quando alguém se passa por outra pessoa ou sistema para
+              obter acesso indevido (ex: usar login e senha roubados).
+            </p>
+          </div>
+        </div>
+
+        <div class="stride-item">
+          <div class="icon gray">T</div>
+          <div class="content">
+            <h3>Tampering (Violação de integridade):</h3>
+            <p>
+              Refere-se à alteração indevida de dados, como modificar
+              informações de um prontuário sem autorização.
+            </p>
+          </div>
+        </div>
+
+        <div class="stride-item">
+          <div class="icon green">R</div>
+          <div class="content">
+            <h3>Repudiation (Repúdio):</h3>
+            <p>
+              Quando um usuário realiza uma ação e depois nega ter feito,
+              dificultando a rastreabilidade.
+            </p>
+          </div>
+        </div>
+
+        <div class="stride-item">
+          <div class="icon blue">I</div>
+          <div class="content">
+            <h3>Information Disclosure (Divulgação de informações):</h3>
+            <p>
+              Exposição de dados sensíveis a pessoas não autorizadas, como
+              vazamento de informações médicas.
+            </p>
+          </div>
+        </div>
+
+        <div class="stride-item">
+          <div class="icon red">D</div>
+          <div class="content">
+            <h3>Denial of Service (Negação de serviço):</h3>
+            <p>
+              Ataques que tornam o sistema indisponível, impedindo o acesso aos
+              prontuários.
+            </p>
+          </div>
+        </div>
+
+        <div class="stride-item">
+          <div class="icon pink">E</div>
+          <div class="content">
+            <h3>Elevation of Privilege (Elevação de privilégio):</h3>
+            <p>
+              Quando um usuário comum consegue acesso a funções de administrador
+              ou níveis mais altos do sistema.
+            </p>
+          </div>
+        </div>
+
+        <!-- </section> -->
+      </section>
+      <section class="section section-integrantes" id="equipe">
+        <h2>Equipe</h2>
+
+        <div class="integrantes">
+          <div class="card">
+            <img src="img/allfoto.jpeg" alt="Integrante Allison" />
+            <p>Allison Lopes da Silva Bosco</p>
+          </div>
+
+          <div class="card">
+            <img src="img/felipe.jpeg" alt="Integrante Felipe" />
+            <p>Felipe Hiroki Nukamoto Tamashiro</p>
+          </div>
+
+          <div class="card">
+            <img src="img/lucas.jpeg" alt="Integrante Lucas" />
+            <p>Lucas Ribeiro Morato</p>
+          </div>
         </div>
       </section>
-      <section class="fale-conosco" id="fale-conosco">
+      <section class="section-form" id="fale-conosco">
         <h2>Fale Conosco</h2>
-        <p class="paragrafo_fale_conosco">
-          Se você tiver alguma dúvida, sugestão ou quiser entrar em contato
-          conosco, por favor, preencha o formulário abaixo:
-        </p>
-        <form class="formulario-contato">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required />
+        <p>
+              Se você tiver alguma dúvida, sugestão ou quiser entrar em contato
+              conosco, por favor preencha o formulário abaixo.
+            </p>
+        <div class="form">
+          <form method="POST">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required />
 
-          <label for="mensagem">Mensagem:</label>
-          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
 
-          <button type="submit">Enviar</button>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
       </section>
     </main>
+
+    <footer>
+      <p>&copy; 2026 NetShield. Todos os direitos reservados.</p>
+    </footer>
   </body>
 </html>
