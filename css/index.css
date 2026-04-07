@@ -90,7 +90,8 @@ body {
 /* CONTAINER */
 .stride-container {
   width: 80%;
-  margin: 40px auto;
+  /* margin: 40px auto; */
+  position: relative;
 }
 
 /* ITEM */
@@ -99,6 +100,14 @@ body {
   align-items: center;
   margin-bottom: 40px;
   margin-top: 40px;
+}
+
+.stride-item:nth-child(even){
+  margin-left: 30px;
+}
+
+.stride-item:nth-child(odd){
+  margin-left: 60px;
 }
 
 /* ÍCONES */
@@ -137,6 +146,16 @@ body {
   max-width: 600px;
   line-height: 1.5;
 }
+
+.imagem-ilustrativa {
+  position: absolute;
+  right: -200px;
+  top: 50px;
+  width: 300px;
+  height: 40rem;
+  width: 30rem;
+} 
+
 
 /* Equipe */
 
