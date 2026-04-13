@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NetShield</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Exo+2:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-logo">
+        <img src="img/logo_netshield.png" alt="NetShield logo" />
+        <div class="shield-fallback" style="display: none">🛡️</div>
+      </div>
+      <div class="header-text">
+        <h1>NetShield</h1>
+        <h2>
+          Segurança da informação para Proteção de Prontuários Eletrônicos com
+          modelagem STRIDE
+        </h2>
+      </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="site-equipe.html">Início</a>
+      <a href="#empresa">Empresa</a>
+      <a href="#projeto">Projeto</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#fale-conosco">Fale Conosco</a>
+    </nav>
+
+    <!-- BANNER -->
+    <div class="banner">
+      <div class="banner-content">
+        <div class="banner-tag">
+          &#9632; Projeto Helix — Segurança Cibernética
+        </div>
+        <h2>
+          Protegendo <span>Prontuários Eletrônicos</span><br />com Inteligência
+          de Ameaças
+        </h2>
+        <p>
+          Metodologia STRIDE aplicada à segurança da informação em saúde digital
+          — identificando, analisando e mitigando riscos em tempo real para
+          garantir confidencialidade, integridade e disponibilidade.
+        </p>
+        <div class="banner-badges">
+          <div class="badge">
+            <span class="dot"></span>Criptografia de dados
+          </div>
+          <div class="badge">
+            <span class="dot"></span>Autenticação multifator
+          </div>
+          <div class="badge">
+            <span class="dot"></span>RBAC — Controle de acesso
+          </div>
+          <div class="badge">
+            <span class="dot"></span>Monitoramento em tempo real
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <div class="main-wrapper">
+        <!-- EMPRESA -->
+        <section class="section" id="empresa">
+          <h2>Empresa</h2>
+          <p>
+            A empresa Net-Shield tem como objetivo desenvolver um sistema de
+            segurança da informação para proteger prontuários eletrônicos.
+          </p>
+          <p>
+            Com o aumento da digitalização dos registros médicos, a segurança
+            desses dados se torna crucial para garantir a privacidade dos
+            pacientes e a integridade das informações.
+          </p>
+          <p>
+            O Net-Shield implementará medidas de criptografia, autenticação e
+            controle de acesso para assegurar que apenas pessoas autorizadas
+            possam acessar os prontuários eletrônicos, além de monitorar
+            atividades suspeitas e fornecer alertas em tempo real para prevenir
+            possíveis violações de segurança.
+          </p>
+        </section>
+
+        <!-- PROJETO -->
+        <section class="section" id="projeto">
+          <h2>Projeto</h2>
+          <p>
+            O Projeto Helix é uma solução de segurança da informação voltada à
+            proteção de prontuários eletrônicos, utilizando a metodologia STRIDE
+            para identificar e mitigar ameaças.
+          </p>
+          <p>
+            A proposta do sistema é garantir a confidencialidade, integridade e
+            disponibilidade dos dados clínicos, que são altamente sensíveis.
+            Para isso, o Helix implementa mecanismos como criptografia de dados,
+            autenticação multifator e controle de acesso baseado em papéis
+            (RBAC).
+          </p>
+          <p>
+            A modelagem STRIDE é aplicada para analisar possíveis
+            vulnerabilidades no sistema, classificando ameaças em seis
+            categorias. Com base nessa análise, o Helix define estratégias
+            específicas de proteção para cada tipo de risco.
+          </p>
+          <p>
+            Assim, o Projeto Helix não apenas protege os dados médicos, mas
+            também fortalece a confiança no sistema de saúde digital, garantindo
+            que as informações dos pacientes estejam seguras contra acessos
+            indevidos e ataques cibernéticos.
+          </p>
+
+          <!-- STRIDE CARDS -->
+          <div class="stride-container">
+            <div class="stride-item">
+              <div class="icon yellow">S</div>
+              <div class="content">
+                <h3>Spoofing — Falsificação de identidade</h3>
+                <p>
+                  Ocorre quando alguém se passa por outra pessoa ou sistema para
+                  obter acesso indevido (ex: usar login e senha roubados).
+                </p>
+              </div>
+            </div>
+            <div class="stride-item">
+              <div class="icon gray">T</div>
+              <div class="content">
+                <h3>Tampering — Violação de integridade</h3>
+                <p>
+                  Refere-se à alteração indevida de dados, como modificar
+                  informações de um prontuário sem autorização.
+                </p>
+              </div>
+            </div>
+            <div class="stride-item">
+              <div class="icon green">R</div>
+              <div class="content">
+                <h3>Repudiation — Repúdio</h3>
+                <p>
+                  Quando um usuário realiza uma ação e depois nega ter feito,
+                  dificultando a rastreabilidade.
+                </p>
+              </div>
+            </div>
+            <div class="stride-item">
+              <div class="icon blue">I</div>
+              <div class="content">
+                <h3>Information Disclosure — Divulgação de informações</h3>
+                <p>
+                  Exposição de dados sensíveis a pessoas não autorizadas, como
+                  vazamento de informações médicas.
+                </p>
+              </div>
+            </div>
+            <div class="stride-item">
+              <div class="icon red">D</div>
+              <div class="content">
+                <h3>Denial of Service — Negação de serviço</h3>
+                <p>
+                  Ataques que tornam o sistema indisponível, impedindo o acesso
+                  aos prontuários.
+                </p>
+              </div>
+            </div>
+            <div class="stride-item">
+              <div class="icon pink">E</div>
+              <div class="content">
+                <h3>Elevation of Privilege — Elevação de privilégio</h3>
+                <p>
+                  Quando um usuário comum consegue acesso a funções de
+                  administrador ou níveis mais altos do sistema.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- EQUIPE -->
+        <section class="section section-integrantes" id="equipe">
+          <h2>Equipe</h2>
+          <div class="integrantes">
+            <div class="card">
+              <img
+                src="img/allfoto.jpeg"
+                alt="Allison Lopes"
+                onerror="
+                  this.src =
+                    'https://ui-avatars.com/api/?name=Allison+Bosco&background=006BFA&color=fff&size=120'
+                "
+              />
+              <p>Allison Lopes da Silva Bosco</p>
+            </div>
+            <div class="card">
+              <img
+                src="img/felipe.jpeg"
+                alt="Felipe Tamashiro"
+                onerror="
+                  this.src =
+                    'https://ui-avatars.com/api/?name=Felipe+Tamashiro&background=006BFA&color=fff&size=120'
+                "
+              />
+              <p>Felipe Hiroki Nukamoto Tamashiro</p>
+            </div>
+            <div class="card">
+              <img
+                src="img/lucas.jpeg"
+                alt="Lucas Morato"
+                onerror="
+                  this.src =
+                    'https://ui-avatars.com/api/?name=Lucas+Morato&background=006BFA&color=fff&size=120'
+                "
+              />
+              <p>Lucas Ribeiro Morato</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- FALE CONOSCO -->
+        <section class="section-form" id="fale-conosco">
+          <h2>Fale Conosco</h2>
+          <p>
+            Se você tiver alguma dúvida, sugestão ou quiser entrar em contato
+            conosco, por favor preencha o formulário abaixo.
+          </p>
+          <div class="form-card">
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Digite seu email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                placeholder="Digite sua mensagem"
+                required
+              ></textarea>
+            </div>
+            <button class="btn-submit" type="submit">Enviar mensagem</button>
+          </div>
+        </section>
+      </div>
+      <!-- /.main-wrapper -->
+    </main>
+
+    <footer>
+      <div class="footer-main">
+        <!-- BRAND -->
+        <div class="footer-brand">
+          <div class="footer-logo-row">
+            <img class="shield-icon" src="img/logo_netshield.png" alt="Shield Icon">
+            <span>NetShield</span>
+          </div>
+          <p>
+            Soluções avançadas de segurança da informação para o setor de saúde.
+            Protegemos o que há de mais sensível: os dados dos seus pacientes.
+          </p>
+          <div class="footer-cert">
+            <span class="cert-badge">ISO/IEC 27001 Certificado</span>
+            <span class="cert-badge">LGPD Compliance</span>
+            <span class="cert-badge">SOC 2 Type II</span>
+          </div>
+          <div class="footer-social">
+            <a class="social-btn" href="#" title="LinkedIn">in</a>
+            <a class="social-btn" href="#" title="GitHub">gh</a>
+            <a class="social-btn" href="#" title="Twitter/X">✕</a>
+            <a class="social-btn" href="#" title="YouTube">▶</a>
+          </div>
+        </div>
+
+        <!-- PRODUTOS -->
+        <div class="footer-col">
+          <h4>Produtos</h4>
+          <ul>
+            <li><a href="#">Helix Core</a></li>
+            <li><a href="#">Helix Monitor</a></li>
+            <li><a href="#">Helix Audit</a></li>
+            <li><a href="#">NetShield API</a></li>
+            <li><a href="#">Planos & Preços</a></li>
+          </ul>
+        </div>
+
+        <!-- EMPRESA -->
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Nossa equipe</a></li>
+            <li><a href="#">Parceiros</a></li>
+            <li><a href="#">Carreiras</a></li>
+            <li><a href="#">Blog & Notícias</a></li>
+            <li><a href="#">Imprensa</a></li>
+          </ul>
+        </div>
+
+        <!-- CONTATO -->
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <span
+              >Av. Paulista, 1374 — 12º andar<br />São Paulo, SP —
+              01310-100</span
+            >
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <span>+55 (11) 3042-8800</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <span>contato@netshield.com.br</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">⏰</span>
+            <span>Seg–Sex: 08h às 18h<br />Suporte 24/7 para clientes</span>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer-divider" />
+
+      <div class="footer-bottom">
+        <span
+          >&copy; 2026 NetShield Tecnologia Ltda. — CNPJ 45.123.789/0001-55 —
+          Todos os direitos reservados.</span
+        >
+        <div class="footer-bottom-links">
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Termos de Uso</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
