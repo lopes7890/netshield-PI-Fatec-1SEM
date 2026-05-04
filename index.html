@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NetShield</title>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Exo+2:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/index.css" />
+    <script src="js/main.js"></script>
   </head>
 
   <body>
@@ -95,30 +100,37 @@
         <!-- PROJETO -->
         <section class="section" id="projeto">
           <h2>Projeto</h2>
-          <p>
-            O Projeto Helix é uma solução de segurança da informação voltada à
-            proteção de prontuários eletrônicos, utilizando a metodologia STRIDE
-            para identificar e mitigar ameaças.
-          </p>
-          <p>
-            A proposta do sistema é garantir a confidencialidade, integridade e
-            disponibilidade dos dados clínicos, que são altamente sensíveis.
-            Para isso, o Helix implementa mecanismos como criptografia de dados,
-            autenticação multifator e controle de acesso baseado em papéis
-            (RBAC).
-          </p>
-          <p>
-            A modelagem STRIDE é aplicada para analisar possíveis
-            vulnerabilidades no sistema, classificando ameaças em seis
-            categorias. Com base nessa análise, o Helix define estratégias
-            específicas de proteção para cada tipo de risco.
-          </p>
-          <p>
-            Assim, o Projeto Helix não apenas protege os dados médicos, mas
-            também fortalece a confiança no sistema de saúde digital, garantindo
-            que as informações dos pacientes estejam seguras contra acessos
-            indevidos e ataques cibernéticos.
-          </p>
+          <div class="project-container">
+            <div class="paragraphs">
+              <p>
+                O Projeto Helix é uma solução de segurança da informação voltada
+                à proteção de prontuários eletrônicos, utilizando a metodologia
+                STRIDE para identificar e mitigar ameaças.
+              </p>
+              <p>
+                A proposta do sistema é garantir a confidencialidade,
+                integridade e disponibilidade dos dados clínicos, que são
+                altamente sensíveis. Para isso, o Helix implementa mecanismos
+                como criptografia de dados, autenticação multifator e controle
+                de acesso baseado em papéis (RBAC).
+              </p>
+              <p>
+                A modelagem STRIDE é aplicada para analisar possíveis
+                vulnerabilidades no sistema, classificando ameaças em seis
+                categorias. Com base nessa análise, o Helix define estratégias
+                específicas de proteção para cada tipo de risco.
+              </p>
+              <p>
+                Assim, o Projeto Helix não apenas protege os dados médicos, mas
+                também fortalece a confiança no sistema de saúde digital,
+                garantindo que as informações dos pacientes estejam seguras
+                contra acessos indevidos e ataques cibernéticos.
+              </p>
+            </div>
+            <div class="logo-helix">
+              <img src="img/logo_helix.png" alt="Logo do projeto Helix" />
+            </div>
+          </div>
 
           <!-- STRIDE CARDS -->
           <div class="stride-container">
@@ -189,41 +201,37 @@
         <section class="section section-integrantes" id="equipe">
           <h2>Equipe</h2>
           <div class="integrantes">
-            <div class="card">
-              <img
-                src="img/allfoto.jpeg"
-                alt="Allison Lopes"
-                onerror="
-                  this.src =
-                    'https://ui-avatars.com/api/?name=Allison+Bosco&background=006BFA&color=fff&size=120'
-                "
-              />
+            <div class="card" onclick="membros()">
+              <img src="img/allfoto.jpeg" alt="Allison Lopes" />
               <p>Allison Lopes da Silva Bosco</p>
             </div>
-            <div class="card">
-              <img
-                src="img/felipe.jpeg"
-                alt="Felipe Tamashiro"
-                onerror="
-                  this.src =
-                    'https://ui-avatars.com/api/?name=Felipe+Tamashiro&background=006BFA&color=fff&size=120'
-                "
-              />
+            <div class="card" onclick="membros()">
+              <img src="img/felipe.jpeg" alt="Felipe Tamashiro" />
               <p>Felipe Hiroki Nukamoto Tamashiro</p>
             </div>
-            <div class="card">
-              <img
-                src="img/lucas.jpeg"
-                alt="Lucas Morato"
-                onerror="
-                  this.src =
-                    'https://ui-avatars.com/api/?name=Lucas+Morato&background=006BFA&color=fff&size=120'
-                "
-              />
+            <div class="card" onclick="membros()">
+              <img src="img/lucas.jpeg" alt="Lucas Morato" />
               <p>Lucas Ribeiro Morato</p>
             </div>
           </div>
         </section>
+
+        <div class="overlay" id="overlay">
+          <div class="popup" id="popup">
+            <button class="popup-close" id="popup-close">✕</button>
+            <img id="popup-img" src="" alt="" />
+            <h3 id="popup-name"></h3>
+            <p class="popup-role" id="popup-role"></p>
+            <hr />
+            <div id="popup-info"></div>
+            <div class="popup-tags" id="popup-tags"></div>
+            <div class="network">
+              <div class="github-link" id="github-link"></div>
+              <div class="linkedin-link" id="linkedin-link"></div>
+            </div>
+            
+          </div>
+        </div>
 
         <!-- FALE CONOSCO -->
         <section class="section-form" id="fale-conosco">
@@ -232,7 +240,7 @@
             Se você tiver alguma dúvida, sugestão ou quiser entrar em contato
             conosco, por favor preencha o formulário abaixo.
           </p>
-          <div class="form-card">
+          <form class="form-card">
             <div class="form-group">
               <label for="nome">Nome</label>
               <input
@@ -262,19 +270,38 @@
                 required
               ></textarea>
             </div>
-            <button class="btn-submit" type="submit">Enviar mensagem</button>
-          </div>
+            <button class="btn-submit" type="submit" onclick="popup()">
+              Enviar mensagem
+            </button>
+          </form>
         </section>
       </div>
       <!-- /.main-wrapper -->
     </main>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal">
+        <div class="modal-icon">✓</div>
+
+        <h3>Mensagem enviada!</h3>
+
+        <p>Obrigado pelo contato. Nossa equipe responderá em breve.</p>
+
+        <button id="closeModal">Fechar</button>
+      </div>
+    </div>
 
     <footer>
       <div class="footer-main">
         <!-- BRAND -->
         <div class="footer-brand">
           <div class="footer-logo-row">
-            <img class="shield-icon" src="img/logo_netshield.png" alt="Shield Icon">
+            <img
+              class="shield-icon"
+              src="img/logo_netshield.png"
+              alt="Shield Icon"
+            />
             <span>NetShield</span>
           </div>
           <p>
