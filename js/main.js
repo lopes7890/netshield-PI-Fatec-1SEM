@@ -51,7 +51,7 @@ const membersData = {
     ],
     tags: ["Cisco", "Draw.io", "Packet Tracer"],
     github: "https://github.com/tamashiro13",
-    linkedin: ""
+    linkedin: "https://www.linkedin.com/in/felipe-tamashiro-7b18243bb?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
   },
   "Lucas Ribeiro Morato": {
     img: "img/lucas.jpeg",
@@ -63,7 +63,7 @@ const membersData = {
     ],
     tags: ["Figma", "HTML", "CSS"],
     github: "https://github.com/Lucas-Rib-dev",
-    linkedin: ""
+    linkedin: "https://www.linkedin.com/in/lucas-ribeiro-morato-465592399?utm_source=share_via&utm_content=profile&utm_medium=member_android"
   },
 };
 
