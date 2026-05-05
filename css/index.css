@@ -823,18 +823,6 @@ footer {
   gap: 20px;
 }
 
-@media (max-width: 860px) {
-  .footer-main {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 540px) {
-  .footer-main {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* =========================
    MODAL
 ========================= */
@@ -1105,4 +1093,38 @@ footer {
   background-color: #0a1f3d;
   border-color: rgba(65, 192, 255, 0.5);
   color: #00c3ff;
+}
+
+@media (max-width: 768px){
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbar {
+    padding: 12px 20px;
+    gap: 20px;
+  }
+
+  .navbar a {
+    font-size: 10px;
+  }
+
+  .project-container {
+    flex-direction: column;
+  }
+  .project-container .logo-helix {
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+  }
 }
